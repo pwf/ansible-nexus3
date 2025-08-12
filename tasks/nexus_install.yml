@@ -75,6 +75,7 @@
     owner: root
     group: root
     mode: "0644"
+    timeout: 60
   check_mode: false
   register: download_status
   until: download_status.status_code == 200
