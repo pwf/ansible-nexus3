@@ -327,6 +327,7 @@
     dest: "{{ nexus_installation_dir }}/nexus-latest/bin/nexus.rc"
     regexp: .*run_as_user=.*
     line: run_as_user="{{ nexus_os_user }}"
+    create: true
   notify:
     - nexus-service-stop
 
