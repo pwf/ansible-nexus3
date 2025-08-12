@@ -152,7 +152,7 @@ not available in the installed release (e.g. yum hosted repositories for nexus <
 You may change the download site for packages by tuning `nexus_download_url` (e.g. closed environment,
 proxy/cache on your network...). **In this case, the automatic detection of the latest version will most likelly fail
 and you will have to fix the version to download.** If you still want to take advantage of automatic latest version detection,
-a call to `<your_custom_location>/latest-unix.tar.gz` must return an HTTP 302 redirect to the latest available version
+a call to `<your_custom_location>/latest-linux-x86_64.tar.gz` must return an HTTP 302 redirect to the latest available version
 in your cache/proxy. If your download location uses https with a self-signed certificate (or a from a private PKI) and
 you are having troubles getting it validated (i.e. download errors in the role) and you fully trust the target
 you can set `nexus_download_ssl_verify: false`.
